@@ -47,3 +47,5 @@ class SSOController extends Controller
         return $response->json();
     }
 }
+// Client ID: 95e3dbcc-4292-495b-82bc-e79c87959498                             
+// Client secret: Pr4Tnn5IvW86LFetdqagJCm6Ud4WI7lggfF5Rqxi     
