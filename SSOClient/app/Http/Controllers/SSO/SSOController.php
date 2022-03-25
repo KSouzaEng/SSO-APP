@@ -47,7 +47,3 @@ class SSOController extends Controller
         return $response->json();
     }
 }
-
-
-
-//
