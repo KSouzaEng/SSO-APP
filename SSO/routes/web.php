@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/dashboard/clients',function(Request $request){
+    Return View('clients',[
+        'clients' => $request->user()->clients
+    ]);
+})->middleware(['auth'])->name('dashboard.clients');

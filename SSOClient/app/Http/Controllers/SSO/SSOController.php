@@ -13,7 +13,7 @@ class SSOController extends Controller
 
         $request->session()->put('state',$state = \Str::random(40));
         $query = http_build_query([
-        "client_id" => "95e3dbcc-4292-495b-82bc-e79c87959498",
+        "client_id" => "95e78691-37e1-4c7b-ab21-cc39526e0387",
         "redirect_uri" => "http://127.0.0.1:8080/callback",
         "response_type" => "code",
         "scope" => "view-user",
@@ -28,8 +28,8 @@ class SSOController extends Controller
         "http://127.0.0.1:8000/oauth/token",
         [
         'grant_type' => "authorization_code",
-        "client_id" => "95e3dbcc-4292-495b-82bc-e79c87959498",
-        "client_secret" => "Pr4Tnn5IvW86LFetdqagJCm6Ud4WI7lggfF5Rqxi ",
+        "client_id" => "95e78691-37e1-4c7b-ab21-cc39526e0387",
+        "client_secret" => "8tCRcx7cUH22Kb45vU1eq8Lqwq6ZIux1kdhV73cr  ",
         "redirect_uri" => "http://127.0.0.1:8080/callback",
         "code" => $request->code
         ]);
@@ -47,3 +47,7 @@ class SSOController extends Controller
         return $response->json();
     }
 }
+
+
+
+//

@@ -15,7 +15,6 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    <a href="{{ route('dashboard.clients') }}">Clientes</a>
                 </div>
             </div>
         </div>
